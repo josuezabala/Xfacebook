@@ -1,0 +1,186 @@
+﻿/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Fondo gris claro de Facebook */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 70px auto 100px auto; /* Centrado con espacio superior */
+    padding: 20px;
+}
+
+/* Lado Izquierdo (Logo y Texto) */
+.left-panel {
+    flex-basis: 50%;
+    padding-right: 32px;
+}
+
+.logo {
+    font-size: 60px;
+    color: #1877f2; /* Azul de Facebook */
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Klavika', sans-serif; /* Usamos una fuente similar a la de Facebook */
+    text-shadow: 1px 1px 1px #00000010; /* Sombra ligera para el logo */
+}
+
+.slogan {
+    font-size: 28px;
+    line-height: 32px;
+    color: #1c1e21;
+    width: 450px;
+}
+
+/* Lado Derecho (Formulario) */
+.right-panel {
+    flex-basis: 40%;
+}
+
+.login-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Campos de Formulario */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+/* Botón de Iniciar Sesión */
+.login-button {
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 0;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+/* Enlace de Contraseña Olvidada */
+.forgot-password {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Línea Separadora */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #dadde1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Botón de Crear Cuenta */
+.create-account-button {
+    background-color: #42b72a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
+}
+
+/* Enlace de Crear Página */
+.create-page-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.create-page-link a {
+    font-weight: bold;
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+/* Pie de Página */
+footer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-size: 12px;
+    color: #737373;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* Responsividad (ajuste para móviles) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .left-panel {
+        flex-basis: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .slogan {
+        display: none; /* Ocultamos el slogan en móvil para ahorrar espacio */
+    }
+
+    .right-panel {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+}
+
